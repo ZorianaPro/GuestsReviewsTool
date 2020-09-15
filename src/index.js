@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import GuestReviews from '../src/components/GuestReviews';
 import * as serviceWorker from './serviceWorker';
 

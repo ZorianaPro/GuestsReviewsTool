@@ -1,8 +1,13 @@
 {
   "name": "guests_reviews_tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Guests Reviews Tool for Bookiply",
+  "author": {
+    "name": "Zoriana Lesyk",
+    "url": "https://github.com/ZorianaPro",
+    "email": "zoryanalesyk@gmail.com"
+  },
   "devDependencies": {
     "@haensl/eslint-config": "^1.3.0",
     "@haensl/hooks": "^1.6.5",
@@ -34,7 +39,7 @@
     "lint": "./node_modules/.bin/eslint './src/**/*.{js,jsx}'",
     "lint:fix": "./node_modules/.bin/eslint  './src/**/*.{js,jsx}' --fix",
     "lint:ci": "./node_modules/.bin/eslint  --format junit -o test-results/eslint/results.xml --ext js,jsx src/",
-    "start": "react-scripts start",
+    "start": "PORT=6969 react-scripts start",
     "test": "react-scripts test",
     "test:ci": "CI=true npm test -- --ci --reporters='default' --reporters='jest-junit'",
     "predeploy": "npm run build",

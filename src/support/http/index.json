@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "accept": "Accept",
+    "authorization": "Authorization",
+    "contentType": "Content-Type",
+    "allowAccess": "Access-Control-Allow-Origin"
+  },
+  "modes": {
+    "cors": "cors",
+    "noCors": "no-cors"
+  },
+  "methods": {
+    "get": "GET",
+    "post": "POST"
+  }
+}

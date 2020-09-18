@@ -1,45 +1,49 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import actions, { setError } from '../../redux/reviews/actions';
-import { Switch, Route, Redirect, NavLink, useHistory, useParams } from 'react-router-dom';
+import { getReviews } from '../../redux/reviews/actions';
 import './GuestReviews.css';
 
 const GuestReviews = () => {
-
-  const [page, setPage] = useState(1);
+  const [shownResults, setShownResults] = useState(0);
+  const [totalResults, setTotalResults] = useState();
+  const [shouldShowLoadButton, setShouldShowLoadButton] = useState(true);
 
   const reviewsState = useSelector((state) => state.reviews);
-
   const dispatch = useDispatch();
-  const history = useHistory();
-  const params = useParams();
+
+  const fetchData = useCallback(
+    (start = 0, limit = 10) => {
+      dispatch(getReviews({
+        start: start,
+        limit: limit
+      }));
+    }, [dispatch]);
 
   useEffect(() => {
-    setPage(params.page);
-  }, [params]);
-
-  useEffect(() => {
-    dispatch(actions.requestReviews({
-      _page: params.page,
-      _limit: 10
-    }));
+    fetchData();
   }, []);
 
   useEffect(() => {
-    dispatch(actions.requestReviews({
-      _page: page,
-      _limit: 10
-    }));
-  }, [page]);
+    if (reviewsState.reviews) {
+      setTotalResults(reviewsState.amount * 1);
+      setShownResults(reviewsState.reviews.length);
+      debugger
+      if (reviewsState.amount * 1 === reviewsState.reviews.length) {
+        setShouldShowLoadButton(false);
+      }
+    }
+  }, [reviewsState]);
 
+  const onCLickLoadMore =  useCallback( () => {
+    debugger
+    if (shownResults !== totalResults) {
+      fetchData(shownResults, 10);
+    }
+  }, [shownResults, fetchData]);
 
   return (
     <div className="GuestReviews">
-      <div className="Pagination">
-        <NavLink exact to="/reviews/2">
-          Page 2
-        </NavLink>
-      </div>
+      { totalResults }
       {
         reviewsState.reviews
         && reviewsState.reviews.map((review) =>
@@ -49,6 +53,13 @@ const GuestReviews = () => {
             }
           </div>
         )
+      }
+      {
+        shouldShowLoadButton
+        && <div className="LoadMore"
+          onClick={ onCLickLoadMore }>
+            load more
+        </div>
       }
     </div>
   );

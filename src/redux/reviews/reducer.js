@@ -8,24 +8,32 @@ export const getInitialState = () => ({
 
 export default (state = getInitialState(), action) => {
   switch (action.type) {
-    case actions.requestReviews:
+    case actions.setIsLoading:
       return {
         ...state,
-        error: false,
-        isLoading: true
+        isLoading: action.payload
       };
     case actions.setError:
       return {
         ...state,
-        isLoading: false,
-        error: action.error
+        error: action.payload
       };
     case actions.setReviews:
       return {
         ...state,
-        isLoading: false,
         error: false,
-        reviews: action.reviews
+        reviews: action.payload
+      };
+    case actions.setMoreReviews:
+      return {
+        ...state,
+        error: false,
+        reviews: [...state.reviews, ...action.payload]
+      };
+    case actions.setAmount:
+      return {
+        ...state,
+        amount: action.payload
       };
     default:
       return state;

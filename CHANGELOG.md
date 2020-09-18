@@ -1,3 +1,7 @@
+##1.1.0
+* [#5: Add actions, reducers and async request with pagination](https://github.com/ZorianaPro/GuestsReviewsTool/issues/5)
+* Update dependencies
+
 ## 1.0.1
 * [#2: Move application to 6969 port](https://github.com/ZorianaPro/GuestsReviewsTool/issues/2)
 

@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import config from './services/config';
 import { applyMiddleware, compose, createStore } from 'redux';
 import rootReducer from './redux/rootReducer';
-import rootSaga from './saga/rootSaga';
-import createSagaMiddleware from 'redux-saga';
+import ReduxThunk from 'redux-thunk';
+import { shim as finallyShim } from 'promise.prototype.finally';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider as StoreProvider } from 'react-redux';
 import App from '../src/components/App';
 import * as serviceWorker from './serviceWorker';
+
+finallyShim();
 
 let devAdditions;
 if (config.isDevelopment) {
@@ -21,15 +23,12 @@ if (config.isDevelopment) {
   }
 }
 
-const sagaMiddleware = createSagaMiddleware();
-
 const middlewares = devAdditions
   ? compose(
-    applyMiddleware(sagaMiddleware),
+    applyMiddleware(ReduxThunk),
     devAdditions
   )
-  : applyMiddleware(sagaMiddleware);
-
+  : applyMiddleware(ReduxThunk);
 
 const store = createStore(
   rootReducer,
@@ -37,7 +36,6 @@ const store = createStore(
   middlewares
 );
 
-sagaMiddleware.run(rootSaga);
 ReactDOM.render(
   <React.StrictMode>
     <StoreProvider store={ store }>

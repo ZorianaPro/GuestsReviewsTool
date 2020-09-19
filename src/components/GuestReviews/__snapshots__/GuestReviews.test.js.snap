@@ -1,7 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`GuestReviews renders as expected 1`] = `
-<div
-  class="GuestReviews"
-/>
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <GuestReviews>
+    <div
+      className="GuestReviews"
+    >
+      <LoadMore
+        onClick={[Function]}
+      >
+        <div
+          className="LoadMore"
+        >
+          <div
+            className="LoadMore-Button"
+            onClick={[Function]}
+          >
+            <p>
+              load more
+            </p>
+          </div>
+        </div>
+      </LoadMore>
+    </div>
+  </GuestReviews>
+</Provider>
 `;

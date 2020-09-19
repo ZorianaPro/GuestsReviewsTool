@@ -3,7 +3,8 @@ import { actions } from './actions';
 export const getInitialState = () => ({
   isLoading: false,
   error: {},
-  reviews: []
+  reviews: [],
+  amount: 0
 });
 
 export default (state = getInitialState(), action) => {

@@ -25,4 +25,17 @@ describe('App', () => {
       )
     ).toMatchSnapshot();
   });
+
+  describe('invalid path', () => {
+    beforeEach(() => {
+      const app = shallow(
+        <Router initialEntries={[ '/random' ]}>
+          <App/>
+        </Router>
+      );
+      it('should redirect to GuestReviews page', () => {
+        expect(app.exists('.GuestReviews'));
+      });
+    });
+  });
 });

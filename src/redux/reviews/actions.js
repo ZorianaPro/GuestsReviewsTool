@@ -1,4 +1,4 @@
-import config from '../../services/config';
+import reviewsService from '../../services/reviews';
 
 export const actions = {
   getReviews: 'GET:REVIEWS',
@@ -36,16 +36,16 @@ export const setIsLoading = (isLoading) => ({
 
 export const getReviews = ({
   start = 0,
-  limit
+  limit = 10
 }) =>
   async (dispatch) => {
     dispatch(setIsLoading(true));
-    const requestParams = {
-      _start: start,
-      _limit: limit
-    };
     try {
-      const data = await fetch(`${config.api.reviews}?${new URLSearchParams(requestParams)}`);
+      const data = await reviewsService.get(
+        {
+          start: start,
+          limit: limit
+        });
       const amount = data.headers.get('X-Total-Count');
       const reviews = await data.json();
       dispatch(setAmount(amount));

@@ -1,5 +1,7 @@
 ##1.1.0
 * [#5: Add actions, reducers and async request with pagination](https://github.com/ZorianaPro/GuestsReviewsTool/issues/5)
+* Add LoadMore component
+* Add reviews service
 * Update dependencies
 
 ## 1.0.1

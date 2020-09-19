@@ -17,12 +17,22 @@ exports[`GuestReviews renders as expected 1`] = `
     <div
       className="GuestReviews"
     >
-      <div
-        className="LoadMore"
+      <LoadMore
         onClick={[Function]}
       >
-        load more
-      </div>
+        <div
+          className="LoadMore"
+        >
+          <div
+            className="LoadMore-Button"
+            onClick={[Function]}
+          >
+            <p>
+              load more
+            </p>
+          </div>
+        </div>
+      </LoadMore>
     </div>
   </GuestReviews>
 </Provider>

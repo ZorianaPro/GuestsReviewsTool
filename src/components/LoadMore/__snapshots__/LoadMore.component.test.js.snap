@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadMore renders as expected 1`] = `
+<LoadMore>
+  <div
+    className="LoadMore"
+  >
+    <div
+      className="LoadMore-Button"
+      onClick={[Function]}
+    >
+      <p>
+        load more
+      </p>
+    </div>
+  </div>
+</LoadMore>
+`;

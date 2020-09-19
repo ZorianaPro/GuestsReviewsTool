@@ -5,6 +5,6 @@ export default {
   base: process.env.PUBLIC_URL
     || `http://localhost:${process.env.PORT}`,
   api: {
-    reviews: 'https://interview-task-api.bookiply.io/reviews'
+    reviews: 'https://interview-task-api.bookiply.io/reviews/'
   }
 };

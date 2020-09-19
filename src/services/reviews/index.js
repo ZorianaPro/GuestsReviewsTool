@@ -1,23 +1,24 @@
 import 'isomorphic-fetch';
 import config from '../config';
-import { headers, methods, modes } from '../../support/http';
-import mimetypes from '../../support/mimetypes';
+import { methods } from '../../support/http';
 
-export const get = (requestParams) =>
+export const get = ({
+  start,
+  limit
+}) =>
   fetch(
-    `${config.api.reviews}?${new URLSearchParams(requestParams)}`,
+    `${config.api.reviews}?${new URLSearchParams({
+      _start: start,
+      _limit: limit
+    })}`,
     {
-      method: methods.get,
-      mode: modes.cors,
-      headers: {
-        [headers.contentType]: mimetypes.json
-      }
+      method: methods.get
     }
   ).then((response) => {
     if (!response.ok) {
-      throw new Error(`Failing to fetch career levels ${response.status}: ${response.statusText}`);
+      throw new Error(`Failing to fetch reviews ${response.status}: ${response.statusText}`);
     }
-    throw response;
+    return response;
   });
 
 export default {

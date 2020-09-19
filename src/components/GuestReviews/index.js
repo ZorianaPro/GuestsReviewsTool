@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getReviews } from '../../redux/reviews/actions';
+import LoadMore from '../LoadMore';
 import './GuestReviews.css';
 
 const GuestReviews = () => {
   const [shownResults, setShownResults] = useState(0);
   const [totalResults, setTotalResults] = useState();
   const [shouldShowLoadButton, setShouldShowLoadButton] = useState(true);
+  const [isLoading, setIsLoading] = useState();
 
   const reviewsState = useSelector((state) => state.reviews);
   const dispatch = useDispatch();
@@ -24,22 +26,24 @@ const GuestReviews = () => {
   }, []);
 
   useEffect(() => {
-    if (reviewsState.reviews) {
-      setTotalResults(reviewsState.amount * 1);
+    setIsLoading(reviewsState.isLoading);
+  }, [reviewsState.isLoading]);
+
+  useEffect(() => {
+    if (reviewsState.reviews && reviewsState.reviews.length) {
       setShownResults(reviewsState.reviews.length);
-      debugger
+      setTotalResults(reviewsState.amount * 1);
       if (reviewsState.amount * 1 === reviewsState.reviews.length) {
         setShouldShowLoadButton(false);
       }
     }
-  }, [reviewsState]);
+  }, [reviewsState.reviews]);
 
-  const onCLickLoadMore =  useCallback( () => {
-    debugger
+  const onCLickLoadMore =  useCallback(() => {
     if (shownResults !== totalResults) {
       fetchData(shownResults, 10);
     }
-  }, [shownResults, fetchData]);
+  }, [shownResults, fetchData, totalResults]);
 
   return (
     <div className="GuestReviews">
@@ -56,10 +60,7 @@ const GuestReviews = () => {
       }
       {
         shouldShowLoadButton
-        && <div className="LoadMore"
-          onClick={ onCLickLoadMore }>
-            load more
-        </div>
+        && <LoadMore onClick={ onCLickLoadMore } isLoading={ isLoading }/>
       }
     </div>
   );

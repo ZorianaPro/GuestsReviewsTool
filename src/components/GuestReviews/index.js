@@ -3,6 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getReviews } from '../../redux/reviews/actions';
 import LoadMore from '../LoadMore';
 import Filters from '../Filters';
+import AirbnbSVG from '../AirbnbSVG';
+import BookingcomSVG from '../BookingcomSVG';
+import HoliduSVG from '../HoliduSVG';
+import ThumbDownSVG from '../ThumbDownSVG';
+import ThumbUpSVG from '../ThumbUpSVG';
 import './GuestReviews.css';
 const filters = require('../../services/filters');
 
@@ -121,6 +126,11 @@ const GuestReviews = () => {
             isLoading
           }/>
       }
+      <AirbnbSVG/>
+      <BookingcomSVG/>
+      <HoliduSVG/>
+      <ThumbDownSVG/>
+      <ThumbUpSVG/>
     </div>
   );
 };

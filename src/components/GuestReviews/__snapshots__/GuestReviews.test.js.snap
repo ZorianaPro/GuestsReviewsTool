@@ -214,6 +214,51 @@ exports[`GuestReviews renders as expected 1`] = `
           </div>
         </div>
       </LoadMore>
+      <AirbnbSVG>
+        <svg
+          className="AirbnbSVG"
+        >
+          <use
+            xlinkHref="#AirbnbSymbol"
+          />
+        </svg>
+      </AirbnbSVG>
+      <BookingcomSVG>
+        <svg
+          className="BookingcomSVG"
+        >
+          <use
+            xlinkHref="#BookingcomSymbol"
+          />
+        </svg>
+      </BookingcomSVG>
+      <HoliduSVG>
+        <svg
+          className="HoliduSVG"
+        >
+          <use
+            xlinkHref="#HoliduSymbol"
+          />
+        </svg>
+      </HoliduSVG>
+      <ThumbDownSVG>
+        <svg
+          className="ThumbDownSVG"
+        >
+          <use
+            xlinkHref="#ThumbDownSymbol"
+          />
+        </svg>
+      </ThumbDownSVG>
+      <ThumbUpSVG>
+        <svg
+          className="ThumbUpSVG"
+        >
+          <use
+            xlinkHref="#ThumbUpSymbol"
+          />
+        </svg>
+      </ThumbUpSVG>
     </div>
   </GuestReviews>
 </Provider>

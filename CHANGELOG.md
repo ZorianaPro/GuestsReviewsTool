@@ -1,3 +1,6 @@
+##1.3.0
+* [#8: Add SVGs](https://github.com/ZorianaPro/GuestsReviewsTool/issues/8)
+
 ##1.2.0
 * [#6: Add filters](https://github.com/ZorianaPro/GuestsReviewsTool/issues/6)
 

@@ -17,6 +17,187 @@ exports[`GuestReviews renders as expected 1`] = `
     <div
       className="GuestReviews"
     >
+      <Filters
+        filters={
+          Array [
+            Object {
+              "name": "score",
+              "values": Array [
+                Object {
+                  "value": "3",
+                },
+                Object {
+                  "value": "3.5",
+                },
+                Object {
+                  "value": "4",
+                },
+                Object {
+                  "value": "4.5",
+                },
+              ],
+            },
+            Object {
+              "name": "channel",
+              "values": Array [
+                Object {
+                  "value": "AIRBNB",
+                },
+                Object {
+                  "value": "HOLIDU",
+                },
+                Object {
+                  "value": "BOOKINGCOM",
+                },
+              ],
+            },
+          ]
+        }
+        onChangeChannel={[Function]}
+        onChangeScore={[Function]}
+      >
+        <div
+          className="Filters"
+        >
+          <h4>
+            Filters
+          </h4>
+          <form
+            className="Filters-Category"
+            name="score"
+            onSubmit={[Function]}
+          >
+            <p>
+              score
+            </p>
+            <div>
+              <input
+                id="score-0"
+                name="score"
+                onChange={[Function]}
+                type="radio"
+                value="3"
+              />
+              <label
+                htmlFor="score-0"
+              >
+                3
+                <span>
+                   & up
+                </span>
+              </label>
+            </div>
+            <div>
+              <input
+                id="score-1"
+                name="score"
+                onChange={[Function]}
+                type="radio"
+                value="3.5"
+              />
+              <label
+                htmlFor="score-1"
+              >
+                3.5
+                <span>
+                   & up
+                </span>
+              </label>
+            </div>
+            <div>
+              <input
+                id="score-2"
+                name="score"
+                onChange={[Function]}
+                type="radio"
+                value="4"
+              />
+              <label
+                htmlFor="score-2"
+              >
+                4
+                <span>
+                   & up
+                </span>
+              </label>
+            </div>
+            <div>
+              <input
+                id="score-3"
+                name="score"
+                onChange={[Function]}
+                type="radio"
+                value="4.5"
+              />
+              <label
+                htmlFor="score-3"
+              >
+                4.5
+                <span>
+                   & up
+                </span>
+              </label>
+            </div>
+            <button
+              type="submit"
+            />
+          </form>
+          <form
+            className="Filters-Category"
+            name="channel"
+            onSubmit={[Function]}
+          >
+            <p>
+              channel
+            </p>
+            <div>
+              <input
+                id="channel-0"
+                name="channel"
+                onChange={[Function]}
+                type="checkbox"
+                value="AIRBNB"
+              />
+              <label
+                htmlFor="channel-0"
+              >
+                AIRBNB
+              </label>
+            </div>
+            <div>
+              <input
+                id="channel-1"
+                name="channel"
+                onChange={[Function]}
+                type="checkbox"
+                value="HOLIDU"
+              />
+              <label
+                htmlFor="channel-1"
+              >
+                HOLIDU
+              </label>
+            </div>
+            <div>
+              <input
+                id="channel-2"
+                name="channel"
+                onChange={[Function]}
+                type="checkbox"
+                value="BOOKINGCOM"
+              />
+              <label
+                htmlFor="channel-2"
+              >
+                BOOKINGCOM
+              </label>
+            </div>
+            <button
+              type="submit"
+            />
+          </form>
+        </div>
+      </Filters>
       <LoadMore
         onClick={[Function]}
       >

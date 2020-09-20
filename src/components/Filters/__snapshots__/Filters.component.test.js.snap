@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters on pass filters renders as expected 1`] = `
+<Filters
+  filters={
+    Array [
+      Object {
+        "name": "score",
+        "values": Array [
+          Object {
+            "value": 3,
+          },
+          Object {
+            "value": 2,
+          },
+        ],
+      },
+      Object {
+        "name": "channel",
+        "values": Array [
+          Object {
+            "value": "AIRBNB",
+          },
+          Object {
+            "value": "SOMETHINGELSE",
+          },
+        ],
+      },
+    ]
+  }
+>
+  <div
+    className="Filters"
+  >
+    <h4>
+      Filters
+    </h4>
+    <form
+      className="Filters-Category"
+      name="score"
+      onSubmit={[Function]}
+    >
+      <p>
+        score
+      </p>
+      <div>
+        <input
+          id="score-0"
+          name="score"
+          onChange={[Function]}
+          type="radio"
+          value={3}
+        />
+        <label
+          htmlFor="score-0"
+        >
+          3
+          <span>
+             & up
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          id="score-1"
+          name="score"
+          onChange={[Function]}
+          type="radio"
+          value={2}
+        />
+        <label
+          htmlFor="score-1"
+        >
+          2
+          <span>
+             & up
+          </span>
+        </label>
+      </div>
+      <button
+        type="submit"
+      />
+    </form>
+    <form
+      className="Filters-Category"
+      name="channel"
+      onSubmit={[Function]}
+    >
+      <p>
+        channel
+      </p>
+      <div>
+        <input
+          id="channel-0"
+          name="channel"
+          onChange={[Function]}
+          type="checkbox"
+          value="AIRBNB"
+        />
+        <label
+          htmlFor="channel-0"
+        >
+          AIRBNB
+        </label>
+      </div>
+      <div>
+        <input
+          id="channel-1"
+          name="channel"
+          onChange={[Function]}
+          type="checkbox"
+          value="SOMETHINGELSE"
+        />
+        <label
+          htmlFor="channel-1"
+        >
+          SOMETHINGELSE
+        </label>
+      </div>
+      <button
+        type="submit"
+      />
+    </form>
+  </div>
+</Filters>
+`;
+
+exports[`Filters renders as expected 1`] = `
+<Filters>
+  <div
+    className="Filters"
+  >
+    <h4>
+      Filters
+    </h4>
+  </div>
+</Filters>
+`;

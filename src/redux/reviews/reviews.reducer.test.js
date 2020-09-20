@@ -68,7 +68,7 @@ describe('reviews reducer', () => {
         .toHaveBeenCalledWith(
           expect.objectContaining({
             type: actions.setAmount,
-            payload: amount
+            payload: amount * 1
           })
         );
     });
@@ -217,7 +217,7 @@ describe('reviews reducer', () => {
 
     it('sets amount', () => {
       expect(state.amount)
-        .toEqual('4');
+        .toEqual(4);
     });
   });
 });

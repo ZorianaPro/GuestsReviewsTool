@@ -3,9 +3,9 @@ import React from 'react';
 const BookingcomSymbol = (props) => (
   <symbol className="BookingcomSymbol"
     id="BookingcomSymbol"
-          viewBox="0 0 154 26"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 154 26"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     {...props}
   >
     <g fillRule="nonzero" fill="none">

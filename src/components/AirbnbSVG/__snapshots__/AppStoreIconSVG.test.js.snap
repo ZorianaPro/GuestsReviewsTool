@@ -2,10 +2,10 @@
 
 exports[`AppStoreIconSVG renders as expected 1`] = `
 <svg
-  className="AppStoreIconSVG"
+  className="AirbnbSVG"
 >
   <use
-    xlinkHref="#AppStoreIconSymbol"
+    xlinkHref="#AirbnbSymbol"
   />
 </svg>
 `;

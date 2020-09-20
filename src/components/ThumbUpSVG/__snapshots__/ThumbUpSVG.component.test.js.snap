@@ -2,10 +2,10 @@
 
 exports[`ThumbUpSVG renders as expected 1`] = `
 <svg
-  className="ThumbDownSVG"
+  className="ThumbUpSVG"
 >
   <use
-    xlinkHref="#ThumbDownSymbol"
+    xlinkHref="#ThumbUpSymbol"
   />
 </svg>
 `;

@@ -1,3 +1,6 @@
+##1.2.0
+* [#6: Add filters](https://github.com/ZorianaPro/GuestsReviewsTool/issues/6)
+
 ##1.1.0
 * [#5: Add actions, reducers and async request with pagination](https://github.com/ZorianaPro/GuestsReviewsTool/issues/5)
 * Add LoadMore component

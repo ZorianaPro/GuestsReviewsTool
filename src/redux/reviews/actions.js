@@ -26,7 +26,7 @@ export const setMoreReviews = (reviews) => ({
 
 export const setAmount = (amount) => ({
   type: actions.setAmount,
-  payload: amount
+  payload: amount * 1
 });
 
 export const setIsLoading = (isLoading) => ({
@@ -36,7 +36,8 @@ export const setIsLoading = (isLoading) => ({
 
 export const getReviews = ({
   start = 0,
-  limit = 10
+  limit = 10,
+  filters = {}
 }) =>
   async (dispatch) => {
     dispatch(setIsLoading(true));
@@ -44,7 +45,8 @@ export const getReviews = ({
       const data = await reviewsService.get(
         {
           start: start,
-          limit: limit
+          limit: limit,
+          filters: filters
         });
       const amount = data.headers.get('X-Total-Count');
       const reviews = await data.json();

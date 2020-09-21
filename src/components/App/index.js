@@ -7,11 +7,11 @@ import './App.css';
 const App = () => (
   <div className="App">
     <Switch>
-      <Route path="/reviews/">
+      <Route path="/reviews">
         <GuestReviews/>
       </Route>
       <Route path="*">
-        <Redirect to="/reviews/" />
+        <Redirect to="/reviews" />
       </Route>
     </Switch>
     <SVGSpriteSheet/>

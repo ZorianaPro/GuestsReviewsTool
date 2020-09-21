@@ -17,29 +17,23 @@
   }
 }
 
-.GuestReviews .GuestReviews-Bg {
+.GuestReviews .GuestReviews-Bg-Image {
   height: 700px;
-  position: absolute;
   width: 90%;
+  background-image: url('/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
 @media only screen and (max-width: 1400px) {
-  .GuestReviews .GuestReviews-Bg {
+  .GuestReviews .GuestReviews-Bg-Image {
     width: 100%;
   }
-}
-
-.GuestReviews .GuestReviews-Bg-Image {
-  background-image: url('/background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
 }
 
 .GuestReviews .GuestReviews-Bg-Mask {

@@ -89,10 +89,8 @@ const GuestReviews = () => {
 
   return (
     <div className="GuestReviews">
-      <div className="GuestReviews-Bg">
-        <div className="GuestReviews-Bg-Image">
-          <div className="GuestReviews-Bg-Mask"/>
-        </div>
+      <div className="GuestReviews-Bg-Image">
+        <div className="GuestReviews-Bg-Mask"/>
       </div>
       <div className="GuestReviews-Container">
         <Filters

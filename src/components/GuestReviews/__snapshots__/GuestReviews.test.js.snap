@@ -18,15 +18,11 @@ exports[`GuestReviews renders as expected 1`] = `
       className="GuestReviews"
     >
       <div
-        className="GuestReviews-Bg"
+        className="GuestReviews-Bg-Image"
       >
         <div
-          className="GuestReviews-Bg-Image"
-        >
-          <div
-            className="GuestReviews-Bg-Mask"
-          />
-        </div>
+          className="GuestReviews-Bg-Mask"
+        />
       </div>
       <div
         className="GuestReviews-Container"

@@ -1,3 +1,6 @@
+##1.4.0
+* [#3: Implement design](https://github.com/ZorianaPro/GuestsReviewsTool/issues/3)
+
 ##1.3.0
 * [#8: Add SVGs](https://github.com/ZorianaPro/GuestsReviewsTool/issues/8)
 

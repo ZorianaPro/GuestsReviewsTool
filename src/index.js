@@ -9,6 +9,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider as StoreProvider } from 'react-redux';
 import App from '../src/components/App';
 import * as serviceWorker from './serviceWorker';
+import './index.css';
 
 finallyShim();
 

@@ -27,51 +27,60 @@ const Filters = ({
 
   return (
     <div className="Filters">
-      <h4>Filters</h4>
-      {
-        filters
-        && filters.map((filter) => (
-          <form className="Filters-Category"
-            name={ filter.name }
-            onSubmit={ onSubmit }>
-            <p>{ filter.name }</p>
+      <div className="Filters-Container">
+        <div className="Filters-Container-Content">
+          <h2>Filters</h2>
+          <div className="Forms-Container">
             {
-              filter.values
-              && filter.values
-                .map((option, key) => (
-                  <div>
-                    {
-                      filter.name === 'channel'
-                      && <input type="checkbox"
-                        id={ `${filter.name}-${key}` }
-                        name={ filter.name }
-                        value={ option.value }
-                        onChange={ _onChange }
-                      />
-                    }
-                    {
-                      filter.name === 'score'
-                      && <input type="radio"
-                        id={ `${filter.name}-${key}` }
-                        name={ filter.name }
-                        value={ option.value }
-                        onChange={ _onChange }
-                      />
-                    }
-                    <label htmlFor={ `${filter.name}-${key}` }>
-                      { option.value }
-                      {
-                        filter.name === 'score'
-                        && <span> & up</span>
-                      }
-                    </label>
-                  </div>
-                ))
+              filters
+              && filters.map((filter) => (
+                <form className="Filters-Category"
+                  name={ filter.name }
+                  onSubmit={ onSubmit }>
+                  <h3>{ filter.name }</h3>
+                  {
+                    filter.values
+                    && filter.values
+                      .map((option, key) => (
+                        <span className="Filters-Category-Option">
+                          {
+                            filter.name === 'channel'
+                            && <input type="checkbox"
+                              id={ `${filter.name}-${key}` }
+                              key={ `${filter.name}-${key}` }
+                              name={ filter.name }
+                              value={ option.value }
+                              onChange={ _onChange }
+                            />
+
+                          }
+                          {
+                            filter.name === 'score'
+                            && <input type="radio"
+                              id={ `${filter.name}-${key}` }
+                              key={ `${filter.name}-${key}` }
+                              name={ filter.name }
+                              value={ option.value }
+                              onChange={ _onChange }
+                            />
+                          }
+                          <label htmlFor={ `${filter.name}-${key}` }>
+                            { option.value }
+                            {
+                              filter.name === 'score'
+                              && <span> & up</span>
+                            }
+                          </label>
+                        </span>
+                      ))
+                  }
+                  <button type="submit" />
+                </form>
+              ))
             }
-            <button type="submit" />
-          </form>
-        ))
-      }
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

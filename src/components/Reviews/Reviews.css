@@ -1,0 +1,12 @@
+.Reviews {
+  z-index: 2;
+  width: calc(100% - 16em);
+  position: relative;
+  display: block;
+}
+
+@media only screen and (max-width: 992px) {
+  .Reviews {
+    width: 100%;
+  }
+}

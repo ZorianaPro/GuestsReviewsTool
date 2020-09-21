@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reviews renders as expected 1`] = `
+<Reviews>
+  <div
+    className="Reviews"
+  >
+    <Paper>
+      <div
+        className="Paper"
+      >
+        <h1>
+           Reviews
+        </h1>
+        <h1>
+          Sorry, no results...
+        </h1>
+      </div>
+    </Paper>
+  </div>
+</Reviews>
+`;

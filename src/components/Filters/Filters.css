@@ -1,0 +1,65 @@
+.Filters {
+  display: block;
+  width: 15em;
+  position: fixed;
+  margin-right: 1em;
+  background: var(--colorWhite);
+  padding-left: 1em;
+  padding-right: 0.5em;
+  border-radius: var(--borderRadius);
+}
+
+@media only screen and (max-width: 992px) {
+  .Filters {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1em;
+  }
+}
+
+.Filters button {
+  display: none;
+}
+
+.Filters .Filters-Container {
+  width: 100%;
+  height: 100%;
+}
+
+.Filters .Filters-Category {
+
+}
+
+.Filters .Filters-Container .Filters-Category > h3 {
+  text-transform: capitalize;
+}
+
+.Filters .Filters-Category .Filters-Category-Option {
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+  font-size: var(--fontSize18);
+}
+
+.Filters .Filters-Container .Filters-Container-Content {
+  display: block;
+  position: relative;
+}
+
+.Filters .Filters-Category {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: var(--fontSize14);
+  margin-bottom: 2.5em;
+}
+
+.Filters .Filters-Category .Filters-Category-Option label {
+  margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 992px) {
+  .Filters .Forms-Container {
+    display: flex;
+  }
+}

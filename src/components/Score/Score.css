@@ -1,0 +1,15 @@
+.Score {
+  background-color: var(--colorBlue);
+  display: inline-block;
+  color: var(--colorWhite);
+  padding: 0.25em 0.5em;
+  border-radius: 0.5em;
+  min-width: 4em;
+  text-align: center;
+  margin-right: 1em;
+}
+
+.Score > p {
+  margin: 0 auto;
+  font-size: var(--fontSize18);
+}

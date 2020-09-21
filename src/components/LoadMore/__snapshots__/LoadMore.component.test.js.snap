@@ -10,7 +10,7 @@ exports[`LoadMore renders as expected 1`] = `
       onClick={[Function]}
     >
       <p>
-        load more
+        LOAD MORE
       </p>
     </div>
   </div>

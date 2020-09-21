@@ -1,0 +1,34 @@
+.Loading p {
+  margin-right: 1em;
+  display: inline-block;
+}
+
+.Loading .Loading-Dot {
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  animation: animation-dot-run 1s infinite ease-out;
+  background-color: #414141;
+  margin-right: 0.25rem;
+  display: inline-block;
+}
+
+.Loading .Loading-Dot:nth-child(2) {
+  animation-delay: 0.22s;
+}
+
+.Loading .Loading-Dot:nth-child(3) {
+  animation-delay: 0.44s;
+}
+
+@keyframes animation-dot-run {
+  0%{
+    background-color: darkblue;
+  }
+  50%{
+    background-color: cornflowerblue;
+  }
+  100%{
+    background-color: #414141;
+  }
+}

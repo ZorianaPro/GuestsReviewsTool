@@ -3,12 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getReviews } from '../../redux/reviews/actions';
 import LoadMore from '../LoadMore';
 import Filters from '../Filters';
-import AirbnbSVG from '../AirbnbSVG';
-import BookingcomSVG from '../BookingcomSVG';
-import HoliduSVG from '../HoliduSVG';
-import ThumbDownSVG from '../ThumbDownSVG';
-import ThumbUpSVG from '../ThumbUpSVG';
 import './GuestReviews.css';
+import Reviews from '../Reviews';
 const filters = require('../../services/filters');
 
 const GuestReviews = () => {
@@ -93,44 +89,44 @@ const GuestReviews = () => {
 
   return (
     <div className="GuestReviews">
-      <Filters
-        filters={
-          filters
-        }
-        onChangeScore={
-          onChangeScore
-        }
-        onChangeChannel={
-          onChangeChannel
-        }
-      />
-      { totalResults }
-      {
-        reviewsState.reviews
-        && reviewsState.reviews
-          .map((review) =>
-            <div className="Review">
-              {
-                review.headline
-              }
-            </div>
-          )
-      }
-      {
-        shouldShowLoadButton
-        && <LoadMore
-          onClick={
-            onCLickLoadMore
+      <div className="GuestReviews-Bg">
+        <div className="GuestReviews-Bg-Image">
+          <div className="GuestReviews-Bg-Mask"/>
+        </div>
+      </div>
+      <div className="GuestReviews-Container">
+        <Filters
+          filters={
+            filters
           }
-          isLoading={
-            isLoading
-          }/>
-      }
-      <AirbnbSVG/>
-      <BookingcomSVG/>
-      <HoliduSVG/>
-      <ThumbDownSVG/>
-      <ThumbUpSVG/>
+          onChangeScore={
+            onChangeScore
+          }
+          onChangeChannel={
+            onChangeChannel
+          }
+        />
+        <div className="GuestReviews-Container-Main">
+          {
+            reviewsState.reviews
+            && <Reviews
+              reviews={ reviewsState.reviews }
+              total={ totalResults }
+              isLoading={ isLoading }
+            />
+          }
+        </div>
+        {
+          shouldShowLoadButton
+          && <LoadMore
+            onClick={
+              onCLickLoadMore
+            }
+            isLoading={
+              isLoading
+            }/>
+        }
+      </div>
     </div>
   );
 };

@@ -1,0 +1,64 @@
+.GuestReviews {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.GuestReviews .GuestReviews-Container {
+  max-width: 90%;
+  width: 1200px;
+  margin: 10em auto 3em;
+  position: relative;
+  height: 100%
+}
+
+@media only screen and (max-width: 992px) {
+  .GuestReviews .GuestReviews-Container {
+    margin: 5em auto 3em;
+  }
+}
+
+.GuestReviews .GuestReviews-Bg {
+  height: 700px;
+  position: absolute;
+  width: 90%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1400px) {
+  .GuestReviews .GuestReviews-Bg {
+    width: 100%;
+  }
+}
+
+.GuestReviews .GuestReviews-Bg-Image {
+  background-image: url('/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.GuestReviews .GuestReviews-Bg-Mask {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.GuestReviews .GuestReviews-Container-Main {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 992px) {
+  .GuestReviews .GuestReviews-Container-Main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

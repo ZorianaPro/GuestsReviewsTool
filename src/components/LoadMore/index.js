@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import './LoadMore.css';
+import Loading from '../Loading';
 
 const LoadMore = ({
   onClick,
@@ -22,10 +23,13 @@ const LoadMore = ({
       <div className="LoadMore-Button"
         onClick={ _onClick }
       >
-        <p>load more</p>
+        {
+          !_isLoading
+          && <p>LOAD MORE</p>
+        }
         {
           _isLoading
-          && <span className="LoadMore-Button-Spinner">spinner</span>
+          && <Loading/>
         }
       </div>
     </div>

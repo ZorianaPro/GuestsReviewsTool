@@ -1,0 +1,21 @@
+.LoadMore .LoadMore-Button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 13em;
+  justify-content: center;
+  margin: 2em auto;
+  border: 1px solid var(--colorBlue);
+  border-radius: var(--borderRadius);
+  transition: all 200ms ease-in;
+}
+
+.LoadMore .LoadMore-Button:hover {
+  background-color: var(--colorBlue);
+  color: var(--colorWhite);
+  transition: all 200ms ease-in;
+}
+
+.LoadMore .LoadMore-Button p {
+  display: inline-block;
+}

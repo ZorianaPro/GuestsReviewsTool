@@ -1,0 +1,20 @@
+.Channel {
+  position: relative;
+  display: flex;
+}
+
+.Channel .AirbnbSVG {
+  width: 5em;
+  height: 2.5em;
+}
+
+.Channel .BookingcomSVG {
+  width: 6em;
+  height: 2.5em;
+}
+
+.Channel .HoliduSVG {
+  width: 5em;
+  height: 2.5em;
+}
+

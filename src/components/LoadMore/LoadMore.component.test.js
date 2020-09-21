@@ -62,11 +62,12 @@ describe('LoadMore', () => {
         );
       });
 
-      it('shows loading spinner', () => {
-        expect(loadMore.exists('.LoadMore-Button-Spinner'))
+      it('shows loading component', () => {
+        expect(loadMore.exists('.Loading'))
           .toBe(true);
       });
     });
+
     describe('is false', () => {
       let loadMore;
 
@@ -81,7 +82,7 @@ describe('LoadMore', () => {
       });
 
       it('shows loading spinner', () => {
-        expect(loadMore.exists('.LoadMore-Button-Spinner'))
+        expect(loadMore.exists('.Loading'))
           .toBe(false);
       });
     });

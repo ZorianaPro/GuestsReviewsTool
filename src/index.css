@@ -1,0 +1,28 @@
+@import url(~normalize.css/normalize.css);
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, system-ui, var(--fontFamilyRoboto), Helvetica Neue, 'Arial', sans-seri;
+  line-height: var(--lineHeight);
+  font-weight: 400;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}

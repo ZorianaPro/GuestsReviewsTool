@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Score renders as expected 1`] = `
+<Score>
+  <div
+    className="Score"
+  >
+    <p>
+      <b />
+       / 
+      5
+    </p>
+  </div>
+</Score>
+`;

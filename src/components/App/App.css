@@ -27,10 +27,10 @@
   --colorLightGray: #E5E5E5;
   --colorGray: #646464;
 
-  --fontFamilySFProRegular: SFProDisplay-Regular, sans-serif;
-  --fontFamilySFProBold: SFProDisplay-Bold, sans-serif;
-  --fontFamilySFProSemiBold: SFProDisplay-SemiBold, sans-serif;
-  --fontFamilySFProMedium: SFProDisplay-Medium, sans-serif;
+  --fontFamilySFProRegular: SFPro-Regular, sans-serif;
+  --fontFamilySFProBold: SFPro-Bold, sans-serif;
+  --fontFamilySFProSemiBold: SFPro-SemiBold, sans-serif;
+  --fontFamilySFProMedium: SFPro-Medium, sans-serif;
   --lineHeight: 1.63;
   --fontBold: 900;
 

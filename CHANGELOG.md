@@ -1,3 +1,6 @@
+##1.5.0
+* Fixes after getting an access to design
+
 ##1.4.0
 * [#3: Implement design](https://github.com/ZorianaPro/GuestsReviewsTool/issues/3)
 

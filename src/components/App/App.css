@@ -1,17 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;');
+@font-face {
+  font-family: 'SFPro-Regular';
+  src: local('SFPro-Regular'), url('./fonts/SFPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPro-Bold';
+  src: local('SFPro-Bold'), url('./fonts/SFPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPro-SemiBold';
+  src: local('SFPro-SemiBold'), url('./fonts/SFPro-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPro-Medium';
+  src: local('SFPro-Medium'), url('./fonts/SFPro-Medium.ttf') format('truetype');
+}
 
 :root {
   --colorWhite: #fff;
-  --colorBlue: #1576DB;
+  --colorLightBlue: #499FDD;
+  --colorBlue: #0276DB;
+  --colorDarkBlue: #173753;
   --colorBlack: #000;
   --colorLightGray: #E5E5E5;
   --colorGray: #646464;
 
-  --fontFamilyRoboto: 'Roboto', sans-serif;
+  --fontFamilySFProRegular: SFProDisplay-Regular, sans-serif;
+  --fontFamilySFProBold: SFProDisplay-Bold, sans-serif;
+  --fontFamilySFProSemiBold: SFProDisplay-SemiBold, sans-serif;
+  --fontFamilySFProMedium: SFProDisplay-Medium, sans-serif;
   --lineHeight: 1.63;
   --fontBold: 900;
 
-  --borderRadius: 0.75em;
+  --borderRadius: 0.5em;
 
   --fontSize4: .125em;
   --fontSize8: .25em;
@@ -23,7 +46,7 @@
   --fontSize24: 1.5em;
   --fontSize26: 1.62em;
   --fontSize30: 1.875em;
-  --fontSize36: 2.25em;
+  --fontSize34: 2.125em;
   --fontSize48: 4em;
 }
 
@@ -36,14 +59,12 @@
   align-content: flex-start;
   display: flex;
   flex-direction: column;
-}
-
-.App b {
-  font-weight: var(--fontBold);
+  color: var(--colorDarkBlue);
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: var(--fontSize26);
+  font-size: var(--fontSize34);
 }
 
 h2 {
@@ -58,6 +79,7 @@ h3 {
 
 h4 {
   font-size: var(--fontSize16);
+  font-family: var(--fontFamilySFProBold);
   margin: 0
 }
 

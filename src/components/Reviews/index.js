@@ -3,11 +3,14 @@ import Review from '../Review';
 import Paper from '../Paper';
 import Loading from '../Loading';
 import './Reviews.css';
+import LoadMore from '../LoadMore';
 
 const Reviews = ({
   reviews,
   total,
-  isLoading
+  isLoading,
+  shouldShowLoadButton,
+  onCLickLoadMore
 }) => (
   <div className="Reviews">
     <Paper>
@@ -39,6 +42,16 @@ const Reviews = ({
           )
       }
     </Paper>
+    {
+      shouldShowLoadButton
+      && <LoadMore
+        onClick={
+          onCLickLoadMore
+        }
+        isLoading={
+          isLoading
+        }/>
+    }
   </div>
 );
 

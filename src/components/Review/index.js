@@ -34,7 +34,7 @@ const Review = ({
       </header>
       {
         headline
-        && <h3>{ headline }</h3>
+        && <h4>{ headline }</h4>
       }
       <div className="Review-Message">
         {

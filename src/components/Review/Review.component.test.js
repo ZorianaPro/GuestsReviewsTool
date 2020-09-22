@@ -44,7 +44,7 @@ describe('Review', () => {
     beforeEach(() => {
       review = mount(<Review headline='Review'/>);
       headline = review.findWhere((node) => (
-        node.name() === 'h3'
+        node.name() === 'h4'
         && node.text() === 'Review'
       ));
     });
@@ -55,7 +55,7 @@ describe('Review', () => {
     });
   });
 
-  describe('if given headline', () => {
+  describe('if given comment', () => {
     let review;
     let comment;
 

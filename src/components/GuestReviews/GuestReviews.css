@@ -6,40 +6,61 @@
 .GuestReviews .GuestReviews-Container {
   max-width: 90%;
   width: 1200px;
-  margin: 10em auto 3em;
+  margin: 2.5em auto;
   position: relative;
   height: 100%
 }
 
-@media only screen and (max-width: 992px) {
-  .GuestReviews .GuestReviews-Container {
-    margin: 5em auto 3em;
-  }
+.GuestReviews .GuestReviews-Container header {
+  margin: 0 0 2.5em 0;
+  color: var(--colorWhite);
+  font-family: var(--fontFamilySFProSemiBold);
+}
+
+.GuestReviews .GuestReviews-Container header > h1 {
+  margin: 0;
+}
+
+.GuestReviews .GuestReviews-Container header > p {
+  font-family: var(--fontFamilySFProMedium);
+  margin: 0;
 }
 
 .GuestReviews .GuestReviews-Bg-Image {
   height: 700px;
-  width: 90%;
+  width: 100%;
   background-image: url('/background.png');
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-@media only screen and (max-width: 1400px) {
-  .GuestReviews .GuestReviews-Bg-Image {
-    width: 100%;
-  }
 }
 
 .GuestReviews .GuestReviews-Bg-Mask {
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.3);
+  background: linear-gradient(rgba(23,55,83,0.1), rgba(4,21,35,0.87));
+}
+
+.GuestReviews .GuestReviews-Bg-Shape-Left {
+  width: 100%;
+  height: 10em;
+  background-color: var(--colorWhite);
+  position: absolute;
+  bottom: 0;
+  transform: rotate(6deg) translateX(30%);
+  left: -50%;
+}
+
+.GuestReviews .GuestReviews-Bg-Shape-Right {
+  width: 100%;
+  height: 10em;
+  background-color: var(--colorWhite);
+  position: absolute;
+  bottom: 0;
+  transform: rotate(-6deg) translateX(-30%);
+  right: -50%;
 }
 
 .GuestReviews .GuestReviews-Container-Main {

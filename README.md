@@ -1,5 +1,5 @@
 # GuestsReviewsTool
-Bookiply is a property management system that helps homeowners distribute and manage their properties and bookings from one single platform.  To help homeowners understand how their properties perform across the different channels, we decided to collect guests’ reviews and show them in our tool.
+Property management system that helps homeowners distribute and manage their properties and bookings from one single platform.  To help homeowners understand how their properties perform across the different channels, we decided to collect guests’ reviews and show them in our tool.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

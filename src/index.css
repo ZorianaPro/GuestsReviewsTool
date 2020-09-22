@@ -17,7 +17,7 @@ body,
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, system-ui, var(--fontFamilyRoboto), Helvetica Neue, 'Arial', sans-seri;
+  font-family: var(--fontFamilySFProRegular);
   line-height: var(--lineHeight);
   font-weight: 400;
 }

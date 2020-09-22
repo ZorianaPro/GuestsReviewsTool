@@ -7,7 +7,7 @@ const Score = ({
 }) => (
   <div className="Score">
     <p>
-      <b>{ score }</b> / { maximumScore }
+      <span>{ score }</span> / { maximumScore }
     </p>
   </div>
 );

@@ -8,7 +8,7 @@
   width: 0.5rem;
   height: 0.5rem;
   animation: animation-dot-run 1s infinite ease-out;
-  background-color: #414141;
+  background-color: var(--colorLightGray);
   margin-right: 0.25rem;
   display: inline-block;
 }
@@ -23,12 +23,12 @@
 
 @keyframes animation-dot-run {
   0%{
-    background-color: darkblue;
+    background-color: var(--colorDarkBlue);
   }
   50%{
-    background-color: cornflowerblue;
+    background-color: var(--colorBlue);
   }
   100%{
-    background-color: #414141;
+    background-color: var(--colorLightGray);
   }
 }

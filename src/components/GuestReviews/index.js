@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getReviews } from '../../redux/reviews/actions';
-import LoadMore from '../LoadMore';
 import Filters from '../Filters';
 import './GuestReviews.css';
 import Reviews from '../Reviews';
@@ -91,8 +90,14 @@ const GuestReviews = () => {
     <div className="GuestReviews">
       <div className="GuestReviews-Bg-Image">
         <div className="GuestReviews-Bg-Mask"/>
+        <div className="GuestReviews-Bg-Shape-Left"/>
+        <div className="GuestReviews-Bg-Shape-Right"/>
       </div>
       <div className="GuestReviews-Container">
+        <header>
+          <p>ID: 091021</p>
+          <h1>La Casa de las Flores</h1>
+        </header>
         <Filters
           filters={
             filters
@@ -111,19 +116,11 @@ const GuestReviews = () => {
               reviews={ reviewsState.reviews }
               total={ totalResults }
               isLoading={ isLoading }
+              shouldShowLoadButton={ shouldShowLoadButton }
+              onCLickLoadMore={ onCLickLoadMore }
             />
           }
         </div>
-        {
-          shouldShowLoadButton
-          && <LoadMore
-            onClick={
-              onCLickLoadMore
-            }
-            isLoading={
-              isLoading
-            }/>
-        }
       </div>
     </div>
   );

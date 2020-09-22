@@ -23,10 +23,24 @@ exports[`GuestReviews renders as expected 1`] = `
         <div
           className="GuestReviews-Bg-Mask"
         />
+        <div
+          className="GuestReviews-Bg-Shape-Left"
+        />
+        <div
+          className="GuestReviews-Bg-Shape-Right"
+        />
       </div>
       <div
         className="GuestReviews-Container"
       >
+        <header>
+          <p>
+            ID: 091021
+          </p>
+          <h1>
+            La Casa de las Flores
+          </h1>
+        </header>
         <Filters
           filters={
             Array [
@@ -69,197 +83,183 @@ exports[`GuestReviews renders as expected 1`] = `
           <div
             className="Filters"
           >
-            <div
-              className="Filters-Container"
-            >
+            <Paper>
               <div
-                className="Filters-Container-Content"
+                className="Paper"
               >
-                <h2>
-                  Filters
-                </h2>
                 <div
-                  className="Forms-Container"
+                  className="Filters-Content"
                 >
-                  <form
-                    className="Filters-Category"
-                    name="score"
-                    onSubmit={[Function]}
+                  <h2>
+                    Filters
+                  </h2>
+                  <div
+                    className="Forms-Container"
                   >
-                    <h3>
-                      score
-                    </h3>
-                    <span
-                      className="Filters-Category-Option"
+                    <form
+                      className="Filters-Category"
+                      name="score"
+                      onSubmit={[Function]}
                     >
-                      <input
-                        id="score-0"
-                        key="score-0"
-                        name="score"
-                        onChange={[Function]}
-                        type="radio"
-                        value="3"
-                      />
-                      <label
-                        htmlFor="score-0"
+                      <h3>
+                        score
+                      </h3>
+                      <span
+                        className="Filters-Category-Option"
                       >
-                        3
-                        <span>
-                           & up
-                        </span>
-                      </label>
-                    </span>
-                    <span
-                      className="Filters-Category-Option"
+                        <input
+                          id="score-0"
+                          key="score-0"
+                          name="score"
+                          onChange={[Function]}
+                          type="radio"
+                          value="3"
+                        />
+                        <label
+                          htmlFor="score-0"
+                        >
+                          3
+                          <span>
+                             & up
+                          </span>
+                        </label>
+                      </span>
+                      <span
+                        className="Filters-Category-Option"
+                      >
+                        <input
+                          id="score-1"
+                          key="score-1"
+                          name="score"
+                          onChange={[Function]}
+                          type="radio"
+                          value="3.5"
+                        />
+                        <label
+                          htmlFor="score-1"
+                        >
+                          3.5
+                          <span>
+                             & up
+                          </span>
+                        </label>
+                      </span>
+                      <span
+                        className="Filters-Category-Option"
+                      >
+                        <input
+                          id="score-2"
+                          key="score-2"
+                          name="score"
+                          onChange={[Function]}
+                          type="radio"
+                          value="4"
+                        />
+                        <label
+                          htmlFor="score-2"
+                        >
+                          4
+                          <span>
+                             & up
+                          </span>
+                        </label>
+                      </span>
+                      <span
+                        className="Filters-Category-Option"
+                      >
+                        <input
+                          id="score-3"
+                          key="score-3"
+                          name="score"
+                          onChange={[Function]}
+                          type="radio"
+                          value="4.5"
+                        />
+                        <label
+                          htmlFor="score-3"
+                        >
+                          4.5
+                          <span>
+                             & up
+                          </span>
+                        </label>
+                      </span>
+                      <button
+                        type="submit"
+                      />
+                    </form>
+                    <form
+                      className="Filters-Category"
+                      name="channel"
+                      onSubmit={[Function]}
                     >
-                      <input
-                        id="score-1"
-                        key="score-1"
-                        name="score"
-                        onChange={[Function]}
-                        type="radio"
-                        value="3.5"
-                      />
-                      <label
-                        htmlFor="score-1"
+                      <h3>
+                        channel
+                      </h3>
+                      <span
+                        className="Filters-Category-Option"
                       >
-                        3.5
-                        <span>
-                           & up
-                        </span>
-                      </label>
-                    </span>
-                    <span
-                      className="Filters-Category-Option"
-                    >
-                      <input
-                        id="score-2"
-                        key="score-2"
-                        name="score"
-                        onChange={[Function]}
-                        type="radio"
-                        value="4"
-                      />
-                      <label
-                        htmlFor="score-2"
+                        <input
+                          id="channel-0"
+                          key="channel-0"
+                          name="channel"
+                          onChange={[Function]}
+                          type="checkbox"
+                          value="AIRBNB"
+                        />
+                        <label
+                          htmlFor="channel-0"
+                        >
+                          AIRBNB
+                        </label>
+                      </span>
+                      <span
+                        className="Filters-Category-Option"
                       >
-                        4
-                        <span>
-                           & up
-                        </span>
-                      </label>
-                    </span>
-                    <span
-                      className="Filters-Category-Option"
-                    >
-                      <input
-                        id="score-3"
-                        key="score-3"
-                        name="score"
-                        onChange={[Function]}
-                        type="radio"
-                        value="4.5"
-                      />
-                      <label
-                        htmlFor="score-3"
+                        <input
+                          id="channel-1"
+                          key="channel-1"
+                          name="channel"
+                          onChange={[Function]}
+                          type="checkbox"
+                          value="HOLIDU"
+                        />
+                        <label
+                          htmlFor="channel-1"
+                        >
+                          HOLIDU
+                        </label>
+                      </span>
+                      <span
+                        className="Filters-Category-Option"
                       >
-                        4.5
-                        <span>
-                           & up
-                        </span>
-                      </label>
-                    </span>
-                    <button
-                      type="submit"
-                    />
-                  </form>
-                  <form
-                    className="Filters-Category"
-                    name="channel"
-                    onSubmit={[Function]}
-                  >
-                    <h3>
-                      channel
-                    </h3>
-                    <span
-                      className="Filters-Category-Option"
-                    >
-                      <input
-                        id="channel-0"
-                        key="channel-0"
-                        name="channel"
-                        onChange={[Function]}
-                        type="checkbox"
-                        value="AIRBNB"
+                        <input
+                          id="channel-2"
+                          key="channel-2"
+                          name="channel"
+                          onChange={[Function]}
+                          type="checkbox"
+                          value="BOOKINGCOM"
+                        />
+                        <label
+                          htmlFor="channel-2"
+                        >
+                          BOOKINGCOM
+                        </label>
+                      </span>
+                      <button
+                        type="submit"
                       />
-                      <label
-                        htmlFor="channel-0"
-                      >
-                        AIRBNB
-                      </label>
-                    </span>
-                    <span
-                      className="Filters-Category-Option"
-                    >
-                      <input
-                        id="channel-1"
-                        key="channel-1"
-                        name="channel"
-                        onChange={[Function]}
-                        type="checkbox"
-                        value="HOLIDU"
-                      />
-                      <label
-                        htmlFor="channel-1"
-                      >
-                        HOLIDU
-                      </label>
-                    </span>
-                    <span
-                      className="Filters-Category-Option"
-                    >
-                      <input
-                        id="channel-2"
-                        key="channel-2"
-                        name="channel"
-                        onChange={[Function]}
-                        type="checkbox"
-                        value="BOOKINGCOM"
-                      />
-                      <label
-                        htmlFor="channel-2"
-                      >
-                        BOOKINGCOM
-                      </label>
-                    </span>
-                    <button
-                      type="submit"
-                    />
-                  </form>
+                    </form>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Paper>
           </div>
         </Filters>
         <div
           className="GuestReviews-Container-Main"
         />
-        <LoadMore
-          onClick={[Function]}
-        >
-          <div
-            className="LoadMore"
-          >
-            <div
-              className="LoadMore-Button"
-              onClick={[Function]}
-            >
-              <p>
-                LOAD MORE
-              </p>
-            </div>
-          </div>
-        </LoadMore>
       </div>
     </div>
   </GuestReviews>

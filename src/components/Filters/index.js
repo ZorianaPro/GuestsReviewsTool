@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import Paper from '../Paper';
 import './Filters.css';
 
 const Filters = ({
@@ -27,8 +28,8 @@ const Filters = ({
 
   return (
     <div className="Filters">
-      <div className="Filters-Container">
-        <div className="Filters-Container-Content">
+      <Paper>
+        <div className="Filters-Content">
           <h2>Filters</h2>
           <div className="Forms-Container">
             {
@@ -80,7 +81,7 @@ const Filters = ({
             }
           </div>
         </div>
-      </div>
+      </Paper>
     </div>
   );
 };

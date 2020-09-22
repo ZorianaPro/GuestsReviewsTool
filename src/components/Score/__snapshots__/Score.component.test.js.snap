@@ -6,7 +6,7 @@ exports[`Score renders as expected 1`] = `
     className="Score"
   >
     <p>
-      <b />
+      <span />
        / 
       5
     </p>

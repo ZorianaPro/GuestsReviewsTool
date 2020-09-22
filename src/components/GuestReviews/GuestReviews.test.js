@@ -39,11 +39,4 @@ describe('GuestReviews', () => {
       )
     ).toMatchSnapshot();
   });
-
-  // describe('if there are still something to load next time', () => {
-  //
-  // });
-  // describe('if there is nothing left to load next time', () => {
-  //
-  // });
 });

@@ -4,8 +4,6 @@
   position: fixed;
   margin-right: 1em;
   background: var(--colorWhite);
-  padding-left: 1em;
-  padding-right: 0.5em;
   border-radius: var(--borderRadius);
 }
 
@@ -21,16 +19,12 @@
   display: none;
 }
 
-.Filters .Filters-Container {
+.Filters > .Paper {
   width: 100%;
   height: 100%;
 }
 
-.Filters .Filters-Category {
-
-}
-
-.Filters .Filters-Container .Filters-Category > h3 {
+.Filters .Paper .Filters-Category > h3 {
   text-transform: capitalize;
 }
 
@@ -41,7 +35,7 @@
   font-size: var(--fontSize18);
 }
 
-.Filters .Filters-Container .Filters-Container-Content {
+.Filters .Paper .Filters-Content {
   display: block;
   position: relative;
 }
@@ -59,7 +53,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .Filters .Forms-Container {
+  .Filters .Filters-Content .Forms-Container {
     display: flex;
   }
 }

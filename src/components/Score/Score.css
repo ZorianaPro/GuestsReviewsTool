@@ -11,5 +11,9 @@
 
 .Score > p {
   margin: 0 auto;
-  font-size: var(--fontSize18);
+  font-size: var(--fontSize16);
+}
+
+.Score > p span {
+  font-family: var(--fontFamilySFProBold);
 }
